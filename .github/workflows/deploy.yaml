@@ -21,7 +21,7 @@ jobs:
             cd nginx_docs
             pipx install mkdocs
             git pull origin main
-	        mkdocs build
+            mkdocs build
             cd
             sudo cp -r nginx_docs/site/. /var/www/html            
             sudo systemctl restart nginx
