@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# mkdocs cheat-shit
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
