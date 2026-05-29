@@ -17,7 +17,7 @@ jobs:
           host: ${{ secrets.TS_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
+          script:
             sudo apt install python3-full
             sudo apt install pipx
             cd nginx_docs
