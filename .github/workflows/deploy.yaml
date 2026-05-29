@@ -20,8 +20,9 @@ jobs:
           script: |
             sudo apt install python3-full
             sudo apt install pipx
-            cd /var/www/html
+            cd nginx_docs
             pipx install mkdocs
             git pull origin main
-	        mkdocs serve
+	        mkdocs build
+            sudo cp -r ./site/. ~/var/www/html            
             sudo systemctl restart nginx
