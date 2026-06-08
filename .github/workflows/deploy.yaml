@@ -15,7 +15,7 @@ jobs:
       - name: Deploy via SSH
         uses: JimCronqvist/action-ssh@master
         with:
-          hosts: ${{ secrets.SERVER_USER }}'@'${{ secrets.TS_IP }}
+          hosts: ${{ secrets.SERVER_USER }}@${{ secrets.TS_IP }}
           privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
           command: |
             cd nginx_docs
