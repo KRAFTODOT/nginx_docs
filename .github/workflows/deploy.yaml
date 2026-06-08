@@ -13,7 +13,7 @@ jobs:
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci
       - name: Deploy via SSH
-        uses: JimCronqvist/action-ssh@master
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.TS_IP }}
           username: ${{ secrets.SERVER_USER }}
