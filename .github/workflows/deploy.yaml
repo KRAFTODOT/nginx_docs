@@ -19,7 +19,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           use_insecure_cipher: true
-          cipher: ed25519
           script: |
             cd nginx_docs
             pipx install mkdocs
